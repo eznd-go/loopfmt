@@ -16,7 +16,12 @@ func TestTable_Render(t *testing.T) {
 				{"data 2-1", "data 2-2", "data 2-3"},
 				{"data 3-1", "data 3-2", "data 3-3"},
 			},
-			want: "",
+			want: ` | column 1 | column 2 | column 3 | 
+ | - | - | - | 
+ | data 1-1 | data 1-2 | data 1-3 | 
+ | data 2-1 | data 2-2 | data 2-3 | 
+ | data 3-1 | data 3-2 | data 3-3 | 
+`,
 		},
 	}
 	for _, tt := range tests {
