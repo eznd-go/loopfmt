@@ -13,7 +13,7 @@ func Strikethrough(text string) string {
 }
 
 func Header(text string) string {
-	return "###" + text
+	return "### " + text
 }
 
 func Link(items ...string) string {
